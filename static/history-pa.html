@@ -177,7 +177,7 @@
                 <div class="container-fluid p-0">
                     <div class="row justify-content-between align-items-center mb-3">
                         <div class="col-auto">
-                            <h1 class="h3 mb-3"><strong>Management</strong> PA</h1>
+                            <h1 class="h3 mb-3"><strong>History</strong> Employee</h1>
                         </div>
                         <div class="col-auto">
                             <div class="input-group">
@@ -195,16 +195,7 @@
                                 <div class="row justify-content-between align-items-center mb-3">
                                     <div class="col-auto mb-3 mb-md-0">
                                         <div class="row gx-1">
-                                            <div class="card-header col">
-                                                <button type="submit" class="btn btn-warning"><i class="align-middle"
-                                                        data-feather="check"></i>
-                                                    <span class="text-light">Validation</span></button>
-                                                <button type="submit" class="btn btn-danger"><i class="align-middle"
-                                                        data-feather="x"></i>
-                                                    <span class="text-light">Not Valid</span></button>
-                                                <button type="submit" class="btn btn-success"><i class="align-middle"
-                                                        data-feather="download"></i>
-                                                    <span class="text-light">Export</span></button>
+                                            <div class="col">
                                                 <div class="container-xl mt-3">
                                                     <div class="row justify-content-between mb-3 d-print-none">
                                                         <div class="col mb-3 mb-md-0">
@@ -233,26 +224,11 @@
                                                                 </span>
                                                             </div>
                                                         </div>
-                                                        <div class="col mb-md-0">
-                                                            <select name="" id="" class="form-control">
-                                                                <option selected disabled>Filter Status</option>
-                                                                <option>Valid</option>
-                                                                <option>Not Valid</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col mb-md-0">
-                                                            <select name="" id="" class="form-control">
-                                                                <option selected disabled>Filter Departement</option>
-                                                                <option>Operation</option>
-                                                                <option>Production</option>
-                                                                <option>Business Development</option>
-                                                            </select>
-                                                        </div>
                                                         <div class="col mb-3 mb-md-0">
                                                             <button type="submit"
                                                                 class="btn btn-primary">Search</button>
                                                         </div>
-                                                        
+
                                                         <div class="col-auto">
                                                         </div>
                                                     </div>
@@ -266,11 +242,11 @@
                                             <thead>
                                                 <tr>
                                                     <th width="10"><input type="checkbox" class="checkall"></th>
-                                                    <th class="d-xl-table-cell">User ID</th>
-                                                    <th class="d-xl-table-cell">Nama</th>
-                                                    <th class="d-xl-table-cell">Poin</th>
-                                                    <th class="d-md-table-cell">Status</th>
-                                                    <th class="d-md-table-cell">Note</th>
+                                                    <th class="d-xl-table-cell">Project ID</th>
+                                                    <th class="d-xl-table-cell">Kegiatan</th>
+                                                    <th class="d-xl-table-cell">Sub Kegiatan</th>
+                                                    <th class="d-md-table-cell">Progress</th>
+                                                    <th class="d-md-table-cell">Point</th>
                                                     <th class="d-md-table-cell">Action</th>
                                                 </tr>
                                             </thead>
@@ -278,12 +254,12 @@
                                                 <tr>
                                                     <td><input type="checkbox"></td>
                                                     <td>1</td>
-                                                    <td class="d-xl-table-cell "><a class="text-decoration-none" href="history-pa.html">Grahan Aditiya Waston</a></td>
-                                                    <td class="d-xl-table-cell">2000</td>
-                                                    <td><span class="badge bg-danger">Not Valid</span></td>
-                                                    <td class="d-xl-table-cell"></td>
+                                                    <td class="d-xl-table-cell">Perencanaan</td>
+                                                    <td class="d-xl-table-cell">Pembuatan Jadwal Aplikasi</td>
+                                                    <td><span class="badge bg-success">100%</span></td>
+                                                    <td class="d-xl-table-cell">300</td>
                                                     <td class="table-action">
-                                                        <a href="history-pa.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        <a href="edit-pa.html"><svg xmlns="http://www.w3.org/2000/svg"
                                                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
@@ -307,12 +283,12 @@
                                                 <tr>
                                                     <td><input type="checkbox"></td>
                                                     <td>2</td>
-                                                    <td class="d-xl-table-cell"><a class="text-decoration-none" href="history-pa.html">Muhammad Fatih Rizqon</a></td>
-                                                    <td class="d-xl-table-cell">2000</td>
-                                                    <td><span class="badge bg-success">Valid</span></td>
-                                                    <td class="d-xl-table-cell">Sudah sesuai</td>
+                                                    <td class="d-xl-table-cell">Perencanaan</td>
+                                                    <td class="d-xl-table-cell">Pembuatan Appraisal</td>
+                                                    <td><span class="badge bg-success">100%</span></td>
+                                                    <td class="d-xl-table-cell">300</td>
                                                     <td class="table-action">
-                                                        <a href="history-pa.html"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        <a href="edit-pa.html"><svg xmlns="http://www.w3.org/2000/svg"
                                                                 width="24" height="24" viewBox="0 0 24 24" fill="none"
                                                                 stroke="currentColor" stroke-width="2"
                                                                 stroke-linecap="round" stroke-linejoin="round"
@@ -331,6 +307,16 @@
                                                                     d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2">
                                                                 </path>
                                                             </svg></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td class="d-xl-table-cell"></td>
+                                                    <th class="d-xl-table-cell">Total</th>
+                                                    <td><span class="badge bg-success"></span></td>
+                                                    <th class="d-xl-table-cell">600</th>
+                                                    <td class="table-action">
                                                     </td>
                                                 </tr>
                                             </tbody>
@@ -378,6 +364,37 @@
 
                         </div>
 
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-lg-12 col-xxl-12 d-flex">
+                            <div class="card flex-fill">
+                                <div class="row justify-content-between align-items-center mb-3">
+                                    <div class="row gx-1">
+                                        <div class="card-header col">
+                                            <div class="container mt-3">
+                                                <div class="row justify-content-between mb-3 d-print-none">
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="form-label">Note </label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="3"></textarea>
+                                                    </div>
+                                                    <div class="col mb-3 mb-md-0 text-center">
+                                                        <button type="submit" class="btn btn-warning"><i
+                                                                class="align-middle" data-feather="check"></i>
+                                                            <span class="text-light">Valid</span></button>
+                                                        <button type="submit" class="btn btn-danger"><i
+                                                                class="align-middle" data-feather="x"></i>
+                                                            <span class="text-light">Not Valid</span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
             </main>
         </div>
